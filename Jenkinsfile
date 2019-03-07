@@ -34,7 +34,7 @@ pipeline {
                
                 container('maven') {
                   
-                    sh 'cd kubernetes;mvn install'
+                    sh 'cd kubernetes;mvn install -Dmaven.repo.local=/cache/java123'
                    
                 }
             }
