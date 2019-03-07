@@ -34,8 +34,8 @@ pipeline {
                
                 container('maven') {
                   
-                    sh 'cd kubernetes;mvn install -Dmaven.test.skip=true'
-                    // sh 'cd kubernetes;mvn install -Dmaven.repo.local=/cache/java123 -Dmaven.test.skip=true'
+                    //sh 'cd kubernetes;mvn install -Dmaven.test.skip=true'
+                    sh 'cd kubernetes;mvn install -Dmaven.repo.local=/cache/java123 -Dmaven.test.skip=true'
                    
                 }
             }
