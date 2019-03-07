@@ -19,6 +19,8 @@ pipeline {
         volumeMounts:
         - mountPath: /cache
           name: maven-cache
+      nodeSelector:
+        mvncache: true
       volumes:
       - name: maven-cache
         nfs:
