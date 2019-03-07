@@ -18,7 +18,8 @@ pipeline {
                
                 container('maven') {
                   
-                    sh 'mvn install'
+                    sh 'cd kubernetes;mvn install'
+                   
                 }
             }
         }
