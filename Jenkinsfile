@@ -18,7 +18,7 @@ pipeline {
                
                 container('maven') {
                   
-                    sh 'mvn build'
+                    sh 'mvn install'
                 }
             }
         }
