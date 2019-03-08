@@ -21,7 +21,7 @@ pipeline {
           name: maven-cache
           #name: test-volume
       nodeSelector:
-        beta.kubernetes.io/instance-type: m5.large
+        beta.kubernetes.io/instance-type: t3.large
       volumes:
       - name: maven-cache
         nfs:
