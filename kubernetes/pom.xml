@@ -206,8 +206,8 @@
       </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-full</artifactId>
-      <version>1.2.8</version>
+      <artifactId>spring-core</artifactId>
+      <version>3.2.2.RELEASE</version>
       </dependency>
   </dependencies>
   <properties>
