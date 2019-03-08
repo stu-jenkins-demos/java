@@ -22,7 +22,6 @@ pipeline {
           #name: test-volume
       nodeSelector:
         beta.kubernetes.io/instance-type: m5.large
-        localcache: true
       volumes:
       - name: maven-cache
         nfs:
