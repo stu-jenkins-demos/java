@@ -18,7 +18,8 @@ pipeline {
         tty: true
         volumeMounts:
         - mountPath: /cache
-          name: test-volume
+          name: maven-cache
+          #name: test-volume
       nodeSelector:
         beta.kubernetes.io/instance-type: m5.large
         localcache: true
