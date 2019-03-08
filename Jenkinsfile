@@ -29,7 +29,7 @@ pipeline {
       - name: test-volume
         hostPath:
           # directory location on host
-          path: /data
+          path: /
           # this field is optional
           type: Directory
     """
