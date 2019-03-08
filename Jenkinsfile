@@ -18,7 +18,7 @@ pipeline {
         tty: true
         volumeMounts:
         - mountPath: /cache
-          name: maven-cache
+          name: test-volume
       nodeSelector:
         mvncache: true
       volumes:
@@ -26,6 +26,12 @@ pipeline {
         nfs:
           server: fs-d8a1c638.efs.us-east-1.amazonaws.com
           path: "/"
+      - name: test-volume
+          hostPath:
+          # directory location on host
+          path: /data
+          # this field is optional
+          type: Directory
     """
         }
       }
