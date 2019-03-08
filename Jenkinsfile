@@ -20,7 +20,8 @@ pipeline {
         - mountPath: /cache
           name: test-volume
       nodeSelector:
-        mvncache: true
+        beta.kubernetes.io/instance-type: t3.large
+        localcache: true
       volumes:
       - name: maven-cache
         nfs:
