@@ -209,6 +209,166 @@
       <artifactId>spring-core</artifactId>
       <version>3.2.2.RELEASE</version>
       </dependency>
+    <dependencies>
+
+                <!-- Module Dependencies -->
+
+            <dependency>
+            <groupId>org.apache.geronimo.daytrader.javaee6</groupId>
+            <artifactId>daytrader-utilities</artifactId>
+            <scope>compile</scope>
+            <version>4.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.geronimo.daytrader.javaee6</groupId>
+            <artifactId>daytrader-entities</artifactId>
+            <scope>compile</scope>
+                        <version>4.0.0</version>
+        </dependency>
+
+        <!-- Swagger Dependencies -->
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+                <!-- Must Precede Third Party Dependencies -->
+
+            <dependency>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat-dbcp</artifactId>
+                    <version>8.0.9</version>
+            </dependency>
+
+            <dependency>
+                    <groupId>org.apache.tomcat.embed</groupId>
+                    <artifactId>tomcat-embed-jasper</artifactId>
+                        <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>jstl</artifactId>
+            </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jdt.core.compiler</groupId>
+                    <artifactId>ecj</artifactId>
+                    <version>4.6.1</version>
+                </dependency>
+
+                <!--
+                spring-boot-starter-web: includes all the dependencies required to create a
+                web app. This will avoid lining up different spring common project versions.
+                -->
+            <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+
+                <!--
+                spring-boot-starter-tomcat: enable an embedded Apache Tomcat 8 instance, by default.
+                -->
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                        <scope>provided</scope>
+            </dependency>
+
+            <!--
+                spring-boot-starter-actuator: Enables spring boot actuator features in spring boot.
+                -->
+                <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+                <!-- Third Party Dependencies -->
+
+                <dependency>
+                        <groupId>commons-digester</groupId>
+                        <artifactId>commons-digester</artifactId>
+                        <scope>compile</scope>
+                </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+            <scope>compile</scope>
+        </dependency>
+
+                <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+
+
+                <!-- REST Client Dependencies -->
+
+       <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+                <dependency>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-core</artifactId>
+                </dependency>
+
+                <dependency>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-annotations</artifactId>
+                </dependency>
+
+                <dependency>
+                        <groupId>commons-digester</groupId>
+                        <artifactId>commons-digester</artifactId>
+                        <scope>compile</scope>
+                </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+            <scope>compile</scope>
+        </dependency>
+
+                <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+
+
+                <!-- REST Client Dependencies -->
+
+       <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+                <dependency>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-core</artifactId>
+                </dependency>
+
+                <dependency>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-annotations</artifactId>
+                </dependency>
   </dependencies>
   <properties>
     <java.version>1.7</java.version>
