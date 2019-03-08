@@ -248,16 +248,9 @@
                     <version>8.0.9</version>
             </dependency>
 
-            <dependency>
-                    <groupId>org.apache.tomcat.embed</groupId>
-                    <artifactId>tomcat-embed-jasper</artifactId>
-                        <scope>provided</scope>
-            </dependency>
+          
 
-            <dependency>
-                    <groupId>javax.servlet</groupId>
-                    <artifactId>jstl</artifactId>
-            </dependency>
+            
 
                 <dependency>
                     <groupId>org.eclipse.jdt.core.compiler</groupId>
@@ -269,27 +262,17 @@
                 spring-boot-starter-web: includes all the dependencies required to create a
                 web app. This will avoid lining up different spring common project versions.
                 -->
-            <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
+            
 
                 <!--
                 spring-boot-starter-tomcat: enable an embedded Apache Tomcat 8 instance, by default.
                 -->
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                        <scope>provided</scope>
-            </dependency>
+               
 
             <!--
                 spring-boot-starter-actuator: Enables spring boot actuator features in spring boot.
                 -->
-                <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
+            
 
                 <!-- Third Party Dependencies -->
 
@@ -300,11 +283,6 @@
             <scope>compile</scope>
         </dependency>
 
-                <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-        </dependency>
-
 
                 <!-- REST Client Dependencies -->
 
@@ -312,11 +290,7 @@
 
                 
 
-                <dependency>
-                        <groupId>commons-digester</groupId>
-                        <artifactId>commons-digester</artifactId>
-                        <scope>compile</scope>
-                </dependency>
+              
 
         
 
@@ -333,10 +307,7 @@
         </dependency>
 
                
-                <dependency>
-                        <groupId>com.fasterxml.jackson.core</groupId>
-                        <artifactId>jackson-annotations</artifactId>
-                </dependency>
+           
   </dependencies>
   <properties>
     <java.version>1.7</java.version>
