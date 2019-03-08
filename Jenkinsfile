@@ -27,7 +27,7 @@ pipeline {
           server: fs-d8a1c638.efs.us-east-1.amazonaws.com
           path: "/"
       - name: test-volume
-          hostPath:
+        hostPath:
           # directory location on host
           path: /data
           # this field is optional
